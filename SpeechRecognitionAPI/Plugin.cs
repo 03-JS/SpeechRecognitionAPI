@@ -6,16 +6,11 @@ using HarmonyLib;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
-using LethalConfig;
-using LethalConfig.ConfigItems;
-using LethalConfig.ConfigItems.Options;
 using SpeechRecognitionAPI.Patches;
-using UnityEngine;
 
 namespace SpeechRecognitionAPI
 {
     [BepInPlugin(modGUID, modName, modVersion)]
-    [BepInDependency("ainavt.lc.lethalconfig")]
     public class Plugin : BaseUnityPlugin
     {
         private const string modGUID = "JS03.SpeechRecognitionAPI";
@@ -52,18 +47,12 @@ namespace SpeechRecognitionAPI
                 "Language to be used for speech recognition" // Description
             );
 
-            var languagesDropdown = new EnumDropDownConfigItem<Languages>(language, true);
-            LethalConfigManager.AddConfigItem(languagesDropdown);
-
             logging = Config.Bind(
                 "General", // Config section
                 "Log recognized speech", // Key of this config
                 true, // Default value
                 "Shows the speech recognition output" // Description
             );
-
-            var loggingCheckbox = new BoolCheckBoxConfigItem(logging, false);
-            LethalConfigManager.AddConfigItem(loggingCheckbox);
             
             Speech.phrases = new List<string>();
 
