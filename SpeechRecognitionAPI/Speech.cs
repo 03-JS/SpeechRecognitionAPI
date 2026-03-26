@@ -82,6 +82,8 @@ namespace SpeechRecognitionAPI
 
         private static int LevenshteinDistance(string s1, string s2)
         {
+            s1 = s1.ToLower();
+            s2 = s2.ToLower();
             int[] prev = new int[s2.Length + 1];
             int[] curr = new int[s2.Length + 1];
 
