@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
-namespace PySpeech
+namespace SpeechRecognitionAPI
 {
     public class Speech
     {
         internal static List<string> phrases;
-        private static string bestMatch;
+        public static string bestMatch;
         private static double bestScore;
 
         internal static float GetSimilarity(string phrase, string recognized)
@@ -81,131 +82,131 @@ namespace PySpeech
 
         private static int LevenshteinDistance(string s1, string s2)
         {
-            s1 = s1.ToLower();
-            s2 = s2.ToLower();
-            int[,] dp = new int[s1.Length + 1, s2.Length + 1];
+            int[] prev = new int[s2.Length + 1];
+            int[] curr = new int[s2.Length + 1];
 
-            for (int i = 0; i <= s1.Length; i++) dp[i, 0] = i;
-            for (int j = 0; j <= s2.Length; j++) dp[0, j] = j;
+            for (int j = 0; j <= s2.Length; j++) prev[j] = j;
 
             for (int i = 1; i <= s1.Length; i++)
             {
+                curr[0] = i;
                 for (int j = 1; j <= s2.Length; j++)
                 {
                     int cost = (s1[i - 1] == s2[j - 1]) ? 0 : 1;
-                    dp[i, j] = Math.Min(
-                        Math.Min(dp[i - 1, j] + 1, dp[i, j - 1] + 1),
-                        dp[i - 1, j - 1] + cost
+                    curr[j] = Math.Min(
+                        Math.Min(prev[j] + 1, curr[j - 1] + 1),
+                        prev[j - 1] + cost
                     );
                 }
+                (prev, curr) = (curr, prev);
             }
-            return dp[s1.Length, s2.Length];
+            return prev[s2.Length];
         }
 
-        internal static readonly string[] languages =
-        {
-            "",
-            "en",
-            "zh",
-            "de",
-            "es",
-            "ru",
-            "ko",
-            "fr",
-            "ja",
-            "pt",
-            "tr",
-            "pl",
-            "ca",
-            "nl",
-            "ar",
-            "sv",
-            "it",
-            "id",
-            "hi",
-            "fi",
-            "vi",
-            "he",
-            "uk",
-            "el",
-            "ms",
-            "cs",
-            "ro",
-            "da",
-            "hu",
-            "ta",
-            "no",
-            "th",
-            "ur",
-            "hr",
-            "bg",
-            "lt",
-            "la",
-            "mi",
-            "ml",
-            "cy",
-            "sk",
-            "te",
-            "fa",
-            "lv",
-            "bn",
-            "sr",
-            "az",
-            "sl",
-            "kn",
-            "et",
-            "mk",
-            "br",
-            "eu",
-            "is",
-            "hy",
-            "ne",
-            "mn",
-            "bs",
-            "kk",
-            "sq",
-            "sw",
-            "gl",
-            "mr",
-            "pa",
-            "si",
-            "km",
-            "sn",
-            "yo",
-            "so",
-            "af",
-            "oc",
-            "ka",
-            "be",
-            "tg",
-            "sd",
-            "gu",
-            "am",
-            "yi",
-            "lo",
-            "uz",
-            "fo",
-            "ht",
-            "ps",
-            "tk",
-            "nn",
-            "mt",
-            "sa",
-            "lb",
-            "my",
-            "bo",
-            "tl",
-            "mg",
-            "as",
-            "tt",
-            "haw",
-            "ln",
-            "ha",
-            "ba",
-            "jw",
-            "su",
-            "yue"
-        };
+        // internal static readonly string[] languages =
+        // {
+        //     "",
+        //     "en",
+        //     "zh",
+        //     "de",
+        //     "es",
+        //     "ru",
+        //     "ko",
+        //     "fr",
+        //     "ja",
+        //     "pt",
+        //     "tr",
+        //     "pl",
+        //     "ca",
+        //     "nl",
+        //     "ar",
+        //     "sv",
+        //     "it",
+        //     "id",
+        //     "hi",
+        //     "fi",
+        //     "vi",
+        //     "he",
+        //     "uk",
+        //     "el",
+        //     "ms",
+        //     "cs",
+        //     "ro",
+        //     "da",
+        //     "hu",
+        //     "ta",
+        //     "no",
+        //     "th",
+        //     "ur",
+        //     "hr",
+        //     "bg",
+        //     "lt",
+        //     "la",
+        //     "mi",
+        //     "ml",
+        //     "cy",
+        //     "sk",
+        //     "te",
+        //     "fa",
+        //     "lv",
+        //     "bn",
+        //     "sr",
+        //     "az",
+        //     "sl",
+        //     "kn",
+        //     "et",
+        //     "mk",
+        //     "br",
+        //     "eu",
+        //     "is",
+        //     "hy",
+        //     "ne",
+        //     "mn",
+        //     "bs",
+        //     "kk",
+        //     "sq",
+        //     "sw",
+        //     "gl",
+        //     "mr",
+        //     "pa",
+        //     "si",
+        //     "km",
+        //     "sn",
+        //     "yo",
+        //     "so",
+        //     "af",
+        //     "oc",
+        //     "ka",
+        //     "be",
+        //     "tg",
+        //     "sd",
+        //     "gu",
+        //     "am",
+        //     "yi",
+        //     "lo",
+        //     "uz",
+        //     "fo",
+        //     "ht",
+        //     "ps",
+        //     "tk",
+        //     "nn",
+        //     "mt",
+        //     "sa",
+        //     "lb",
+        //     "my",
+        //     "bo",
+        //     "tl",
+        //     "mg",
+        //     "as",
+        //     "tt",
+        //     "haw",
+        //     "ln",
+        //     "ha",
+        //     "ba",
+        //     "jw",
+        //     "su",
+        //     "yue"
+        // };
     }
 
     public class SpeechEventArgs : EventArgs
@@ -216,5 +217,10 @@ namespace PySpeech
         {
             Text = text;
         }
+    }
+
+    internal class VoskResult
+    {
+        public string text;
     }
 }

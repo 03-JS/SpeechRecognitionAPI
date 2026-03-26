@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d78b706-64a3-4f4c-9ac0-54b8492b5363" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Native/WhisperNative.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Native/WhisperNativeParams.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/AudioUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/FileUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/LogUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/MainThreadDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/MicrophoneRecord.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/PlayAudioAndDestroy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/RotatingCube.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/TextUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/Utils/UiUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/WhisperLanguage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/WhisperManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/WhisperParams.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/WhisperResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/WhisperStream.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/Whisper Runtime/WhisperWrapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WhisperLC/WhisperLC.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PySpeech/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PySpeech/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PySpeech/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/Engine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC/Engine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/Languages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC/Languages.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/Models.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC/Models.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/Patches/GameNetworkManagerPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC/Patches/GameNetworkManagerPatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/Plugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC/Plugin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/PySpeech.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/Speech.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC/Speech.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpeech/Util/UnityMainThreadDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WhisperLC/Util/UnityMainThreadDispatcher.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;03-JS&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/03-JS/PySpeech.git&quot;,
+    &quot;accountId&quot;: &quot;cda3570f-a660-4303-ae48-7d751a45b536&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31f0351006d541aeb5ae92a12fc7161b1d1c00/79/ae20dccf/GameNetworkManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e580c3a2e66c45f2821960fd9fd34b36184e00/84/bf697006/NetworkManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e580c3a2e66c45f2821960fd9fd34b36184e00/eb/efd101eb/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/js03/Game related stuff/Lethal Company APIs/PySpeech/PySpeech/Engine.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ydOVjPEBreoWviXPe68ptPeOQX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/mnt/SSD/SteamLibrary/steamapps/common/Lethal Company/Lethal Company_Data/Managed/UnityEngine.UIModule.dll&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d78b706-64a3-4f4c-9ac0-54b8492b5363" name="Changes" comment="" />
+      <created>1750161008986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750161008986</updated>
+      <workItem from="1750161010416" duration="77000" />
+      <workItem from="1750161152007" duration="3732000" />
+      <workItem from="1750328129688" duration="439000" />
+      <workItem from="1750328580905" duration="649000" />
+      <workItem from="1750333861039" duration="2234000" />
+      <workItem from="1750344134169" duration="118000" />
+      <workItem from="1750344280239" duration="1308000" />
+      <workItem from="1750345597768" duration="6742000" />
+      <workItem from="1750422405258" duration="611000" />
+      <workItem from="1750782454028" duration="26000" />
+      <workItem from="1774285107577" duration="34000" />
+      <workItem from="1774285180329" duration="247000" />
+      <workItem from="1774286307086" duration="8204000" />
+    </task>
+    <task id="LOCAL-00001" summary="&#10;Make the Python executable run through Wine on Linux">
+      <option name="closed" value="true" />
+      <created>1750164721700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750164721700</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Undo yesterday's changes">
+      <option name="closed" value="true" />
+      <created>1750352974305</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750352974305</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="&#10;Make the Python executable run through Wine on Linux" />
+    <MESSAGE value="Undo yesterday's changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Undo yesterday's changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

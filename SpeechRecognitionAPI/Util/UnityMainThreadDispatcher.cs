@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace PySpeech.Util
+namespace SpeechRecognitionAPI.Util
 {
     internal class UnityMainThreadDispatcher : MonoBehaviour
     {
@@ -11,7 +11,7 @@ namespace PySpeech.Util
 
         void Start()
         {
-            Plugin.mls.LogInfo("PySpeech Dispatcher created");
+            Plugin.mls.LogInfo("SpeechRecognitionAPI Dispatcher created");
         }
 
         public void Update()
